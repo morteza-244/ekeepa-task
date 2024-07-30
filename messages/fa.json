@@ -1,0 +1,25 @@
+{
+  "Navbar": {
+    "title": "اکیپا",
+    "label": "ورود"
+  },
+  "Navigation": {
+    "home": "خانه",
+    "products": "محصولات",
+    "contact-us": "ارتباط با ما",
+    "about-us": "درباره ما"
+  },
+  "SignInForm": {
+    "title": "خوش آمدید",
+    "description": "برای ورود اطلاعات خود را وارد کنید",
+    "email_label": "ایمیل",
+    "password_label": "رمز عبور",
+    "button_label": "ورود",
+    "email_error_message": "ایمیل ضروری میباشد",
+    "password_error_message": "رمز عبور باید حداقل 6 کاراکتر باشد"
+  },
+  "LanguageLocale": {
+    "persian_locale": "فارسی",
+    "english_locale": "انگلیسی"
+  }
+}

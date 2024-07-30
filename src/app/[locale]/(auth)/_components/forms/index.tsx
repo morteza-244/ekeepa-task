@@ -9,23 +9,24 @@ import {
   TextField,
   Typography,
 } from "@mui/material";
+import { useTranslations } from "next-intl";
 import { useForm } from "react-hook-form";
 import * as yup from "yup";
 
-const signInSchema = yup
-  .object()
-  .shape({
-    email: yup
-      .string()
-      .email("ایمیل ضروری میباشد")
-      .required("ایمیل ضروری میباشد"),
-    password: yup.string().min(6, "رمز عبور باید حداقل 6 رقم باشد"),
-  })
-  .required();
-
-type TSignInFormData = yup.InferType<typeof signInSchema>;
-
 const SignInForm = () => {
+  const t = useTranslations("SignInForm");
+  const signInSchema = yup
+    .object()
+    .shape({
+      email: yup
+        .string()
+        .email(t("email_error_message"))
+        .required(t("email_error_message")),
+      password: yup.string().min(6, t("password_error_message")),
+    })
+    .required();
+
+  type TSignInFormData = yup.InferType<typeof signInSchema>;
   const {
     register,
     formState: { errors },
@@ -56,8 +57,8 @@ const SignInForm = () => {
             marginY: 2,
           }}
         >
-          <Typography variant="h3">خوش آمدید</Typography>
-          <Typography>برای ورود اطلاعات خود را وارد کنید</Typography>
+          <Typography variant="h3">{t("title")}</Typography>
+          <Typography>{t("description")}</Typography>
         </Box>
         <CardContent>
           <Box
@@ -72,7 +73,7 @@ const SignInForm = () => {
           >
             <Box>
               <Typography variant="h6" sx={{ my: 1 }}>
-                ایمیل
+                {t("email_label")}
               </Typography>
               <TextField
                 fullWidth
@@ -89,7 +90,7 @@ const SignInForm = () => {
             </Box>
             <Box>
               <Typography variant="h6" sx={{ my: 1 }}>
-                رمز عبور
+                {t("password_label")}
               </Typography>
               <TextField
                 fullWidth
@@ -105,7 +106,7 @@ const SignInForm = () => {
               )}
             </Box>
             <Button type={"submit"} variant={"contained"}>
-              ورود
+              {t("button_label")}
             </Button>
           </Box>
         </CardContent>

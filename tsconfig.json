@@ -19,7 +19,7 @@
     ],
     "paths": {
       "@/*": ["./src/*"],
-      "@/auth-components/*": ["./src/app/(auth)/_components/*"]
+      "@/auth-components/*": ["./src/app/[locale]/(auth)/_components/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],

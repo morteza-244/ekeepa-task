@@ -1,12 +1,15 @@
 import { Box } from "@mui/material";
+import { useTranslations } from "next-intl";
 import NavItem from "./NavItem";
 
 const NavbarRoutes = () => {
+  const t = useTranslations("Navigation");
+
   const pages = [
-    { label: "خانه", href: "/" },
-    { label: "محصولات", href: "/products" },
-    { label: "ارتباط با ما", href: "/contact-us" },
-    { label: "درباره ما", href: "/about-us" },
+    { label: t("home"), href: "/" },
+    { label: t("products"), href: "/products" },
+    { label: t("contact-us"), href: "/contact-us" },
+    { label: t("about-us"), href: "/about-us" },
   ];
   return (
     <Box sx={{ display: "flex", justifyContent: "space-between", gap: 4 }}>

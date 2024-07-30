@@ -1,0 +1,25 @@
+{
+  "Navbar": {
+    "title": "Ekeepa",
+    "label": "Login"
+  },
+  "Navigation": {
+    "home": "Home",
+    "products": "Products",
+    "contact-us": "Contact Us",
+    "about-us": "About Us"
+  },
+  "SignInForm": {
+    "title": "Welcome",
+    "description": "Enter your information to login",
+    "email_label": "Email",
+    "password_label": "Password",
+    "button_label": "Login",
+    "email_error_message": "Email is required",
+    "password_error_message": "Password must be at least 6 characters"
+  },
+  "LanguageLocale": {
+    "persian_locale": "Persian",
+    "english_locale": "English"
+  }
+}
