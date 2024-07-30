@@ -16,7 +16,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" dir={"rtl"}>
       <body className={inter.className}>
         <AppRouterCacheProvider options={{ key: "css" }}>
           {children}

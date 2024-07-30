@@ -9,6 +9,7 @@ const roboto = Roboto({
 });
 
 const theme = createTheme({
+  direction: "rtl",
   typography: {
     fontFamily: roboto.style.fontFamily,
   },
