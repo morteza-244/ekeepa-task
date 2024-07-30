@@ -24,5 +24,9 @@
   },
   "Footer": {
     "description": "All the rights of this website belong to the innovation company (online store)."
+  },
+  "NotFound": {
+    "error_message": "Page Not Found",
+    "button_label": "Return to the login page"
   }
 }
