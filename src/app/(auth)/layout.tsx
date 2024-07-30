@@ -7,7 +7,12 @@ const AuthLayout = ({ children }: { children: ReactNode }) => {
     <Box sx={{ height: "100vh" }}>
       <Navbar />
       <Container maxWidth={"xl"} sx={{ minHeight: "100%" }}>
-        <main className="flex-1">{children}</main>
+        <Box
+          component={"main"}
+          sx={{ flexGrow: 1, display: "flex", py: "5rem" }}
+        >
+          {children}
+        </Box>
       </Container>
       <div className="h-16 bg-red-300">footer</div>
     </Box>
