@@ -5,6 +5,7 @@ import Button from "@mui/material/Button";
 import Toolbar from "@mui/material/Toolbar";
 import Link from "next/link";
 import NavbarRoutes from "./NavbarRoutes";
+import ToggleColorMode from "./ToggleColorMode";
 const Navbar = () => {
   return (
     <Box sx={{ flexGrow: 1 }}>
@@ -22,9 +23,12 @@ const Navbar = () => {
               width: "100%",
             }}
           >
-            <Typography variant="h4">اکیپا</Typography>
+            <Typography variant="h4" sx={{ color: "text.primary" }}>
+              اکیپا
+            </Typography>
             <NavbarRoutes />
             <Box sx={{ display: "flex" }}>
+              <ToggleColorMode />
               <Link href={"/sign-in"}>
                 <Button variant="contained">ورود / ثبت نام</Button>
               </Link>

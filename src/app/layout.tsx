@@ -1,3 +1,4 @@
+import ThemeProvider from "@/auth-components/providers/ThemeProvider";
 import { AppRouterCacheProvider } from "@mui/material-nextjs/v13-appRouter";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
@@ -19,7 +20,7 @@ export default function RootLayout({
     <html lang="en" dir={"rtl"}>
       <body className={inter.className}>
         <AppRouterCacheProvider options={{ key: "css" }}>
-          {children}
+          <ThemeProvider>{children}</ThemeProvider>
         </AppRouterCacheProvider>
       </body>
     </html>
