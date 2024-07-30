@@ -1,3 +1,4 @@
+import Footer from "@/auth-components/footer";
 import { Navbar } from "@/auth-components/navbar";
 import { Box, Container } from "@mui/material";
 import { ReactNode } from "react";
@@ -14,7 +15,7 @@ const AuthLayout = ({ children }: { children: ReactNode }) => {
           {children}
         </Box>
       </Container>
-      <div className="h-16 bg-red-300">footer</div>
+      <Footer />
     </Box>
   );
 };

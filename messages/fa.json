@@ -21,5 +21,8 @@
   "LanguageLocale": {
     "persian_locale": "فارسی",
     "english_locale": "انگلیسی"
+  },
+  "Footer": {
+    "description": "تمام حقوق این وب‌سایت نیز برای شرکت نوآوری (فروشگاه آنلاین) است."
   }
 }

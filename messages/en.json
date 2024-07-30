@@ -21,5 +21,8 @@
   "LanguageLocale": {
     "persian_locale": "Persian",
     "english_locale": "English"
+  },
+  "Footer": {
+    "description": "All the rights of this website belong to the innovation company (online store)."
   }
 }
