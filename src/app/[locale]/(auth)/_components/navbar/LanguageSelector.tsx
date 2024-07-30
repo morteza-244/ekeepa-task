@@ -23,7 +23,7 @@ const LanguageSelector = () => {
   };
   return (
     <div>
-      <FormControl sx={{ m: 1, minWidth: 120 }} size="small">
+      <FormControl sx={{ m: 1, minWidth: 80 }} size="small">
         <Select
           onChange={onSelectChange}
           defaultValue={currentLocale}
