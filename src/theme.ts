@@ -1,5 +1,9 @@
 import { PaletteMode, ThemeOptions } from "@mui/material";
-
+import localFont from "next/font/local";
+const iranSans = localFont({
+  src: "../public/fonts/iranSans.ttf",
+  display: "swap",
+});
 const lightPalette = {
   background: "hsl(0, 0%, 100%)",
   foreground: "hsl(20, 14.3%, 4.1%)",
@@ -45,6 +49,9 @@ const darkPalette = {
 };
 
 export const getDesignTokens = (mode: PaletteMode): ThemeOptions => ({
+  typography: {
+    fontFamily: iranSans.style.fontFamily,
+  },
   palette: {
     mode,
     ...(mode === "light"
